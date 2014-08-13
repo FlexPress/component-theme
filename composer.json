@@ -1,0 +1,10 @@
+{
+    "name": "flexpress/component-theme",
+    "description": "Base theme for WordPress",
+    "autoload": {
+        "psr-4": {
+            "FlexPress\\Components\\Theme\\": "src/FlexPress/Components/Theme/"
+        }
+    }
+
+}
