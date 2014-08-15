@@ -121,7 +121,7 @@ abstract class AbstractTheme
         $this->themeURL = get_bloginfo('url');
 
         add_action('after_setup_theme', array($this, 'afterSetupTheme'));
-        add_action('template_include', array($this, 'template_include'));
+        add_action('template_include', array($this, 'templateInclude'));
 
     }
 
@@ -151,7 +151,7 @@ abstract class AbstractTheme
      * @author Tim Perry
      *
      */
-    public function template_include()
+    public function templateInclude()
     {
         $this->setupRoutes();
         $this->router->route();
